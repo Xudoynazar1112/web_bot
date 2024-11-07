@@ -29,13 +29,13 @@ TOKEN = '7840225472:AAHsBS4ukkeUKm_g7Z1p48BLkOCQMgsmgJQ'
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message with a button that opens a the web app."""
     await update.message.reply_text(
-        "Please press the button below to choose a color via the WebApp.",
+        "Assalomu alaykum, botimizga xush kelibsiz 😎. Mahsulotlarni ko'rish uchun quyidagi tugmani bosing 😉!",
         reply_markup=ReplyKeyboardMarkup.from_button(
             KeyboardButton(
                 text="Open the color picker!",
                 web_app=WebAppInfo(url="https://web-bot-front-theta.vercel.app/"),
                 # web_app=WebAppInfo(url="https://python-telegram-bot.org/static/webappbot"),
-            )
+            ), resize_keyboard=True
         ),
     )
 
